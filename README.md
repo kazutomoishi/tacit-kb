@@ -56,6 +56,8 @@ export ANTHROPIC_API_KEY="sk-ant-..."      # bash
 # $env:ANTHROPIC_API_KEY="sk-ant-..."      # PowerShell
 
 python collect.py                 # build tacit_kb.db and detect candidates
+python collect.py 5               # try five papers first
+python collect.py 500             # try five hundreds papers 
 python extract_batch.py --limit 5 # try five papers first
 python extract_batch.py           # process every paper with candidates
 ```
