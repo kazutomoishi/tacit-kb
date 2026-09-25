@@ -22,7 +22,7 @@ The control condition used for the paired comparison in the paper was produced b
 the same Stage-2 script with the three theoretical commitments removed from the
 system prompt and nothing else changed. 
 The prompt is reproduced in extract_batch.py. 
-Its control-condition variant is available from the author on request
+Its control-condition variant is available from the author on request.
 
 Note: the system prompt (embedded in `extract_batch.py`) refers to "SECIモデル"
 (the SECI model). The paper's own terminology was later revised to "Nonaka's
