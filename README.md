@@ -23,6 +23,12 @@ the same Stage-2 script with the three theoretical commitments removed from the
 system prompt and nothing else changed. The prompt and its control-condition
 variant are available from the author on request.
 
+Note: the system prompt (embedded in `extract_batch.py`) refers to "SECIモデル"
+(the SECI model). The paper's own terminology was later revised to "Nonaka's
+model of knowledge conversion," since the SECI acronym does not appear in
+Nonaka (1994). The prompt is reproduced verbatim, as actually used, and was not
+retroactively edited to match the paper's revised wording.
+
 ## Trace categories
 
 Six categories, 49 lexical alternatives in all.
