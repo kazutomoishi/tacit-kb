@@ -20,8 +20,9 @@ text leaves unstated, and externalizes it into structured, source-linked
 
 The control condition used for the paired comparison in the paper was produced by
 the same Stage-2 script with the three theoretical commitments removed from the
-system prompt and nothing else changed. The prompt and its control-condition
-variant are available from the author on request.
+system prompt and nothing else changed. 
+The prompt is reproduced in extract_batch.py. 
+Its control-condition variant is available from the author on request
 
 Note: the system prompt (embedded in `extract_batch.py`) refers to "SECIモデル"
 (the SECI model). The paper's own terminology was later revised to "Nonaka's
@@ -94,9 +95,8 @@ These shaped what the database could contain, and are reported in the paper.
 
 The database reported in the paper (`tacit_kb.db`, 315 papers, 4,189 candidates,
 1,531 cards) is a prototype produced during and shortly after a hackathon and is
-not deposited as a public resource. The database, the system prompt and its
-control-condition variant, the blinded evaluation instruments, the blinding keys
-and the complete rating data are available from the author on reasonable request.
+not deposited as a public resource. The database, the control-condition variant of the prompt, the blinded evaluation instruments, the blinding keys and the complete rating data are available from the author on reasonable request.
+
 
 ## Origin
 
