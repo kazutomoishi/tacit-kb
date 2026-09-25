@@ -64,7 +64,8 @@ export ANTHROPIC_API_KEY="sk-ant-..."      # bash
 
 python collect.py                 # build tacit_kb.db and detect candidates
 python collect.py 5               # try five papers first
-python collect.py 500             # try five hundreds papers 
+python collect.py 500             # try five hundred papers
+python collect.py [数字]          # reproduces the paper's corpus (349 retrieved, 315 after filtering)
 python extract_batch.py --limit 5 # try five papers first
 python extract_batch.py           # process every paper with candidates
 ```
