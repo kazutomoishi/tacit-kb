@@ -8,8 +8,9 @@ collect.py  —  論文の収集だけを行うスタンドアロン版
   使い方:
       python3 collect.py            # 既定100本を収集
       python3 collect.py 30         # 30本だけ収集
-      python3 collect.py 500        # 500本だけ収集、引数を変えれば上限も変わる。
-      python collect.py [数字]　     # 数字に収集する論文の上限値をいれる。
+      python3 collect.py 500        # 論文で使用した上限値に近い設定。ただし Europe PMC・NCBI BioC は
+                                    # 随時更新されるため、349件取得・315件通過という結果を完全には
+                                    # 再現できない可能性がある。
   出力: tacit_kb.db の papers / candidate_terms テーブル
 
   ※ candidate_terms（暗黙知候補の自動検出）も同時に作ります。
