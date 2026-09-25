@@ -8,7 +8,8 @@ collect.py  —  論文の収集だけを行うスタンドアロン版
   使い方:
       python3 collect.py            # 既定100本を収集
       python3 collect.py 30         # 30本だけ収集
-      python3 collect.py 500         # 500本だけ収集、引数を変えれば上限も変わる。
+      python3 collect.py 500        # 500本だけ収集、引数を変えれば上限も変わる。
+      python collect.py [数字]　     # 数字に収集する論文の上限値をいれる。
   出力: tacit_kb.db の papers / candidate_terms テーブル
 
   ※ candidate_terms（暗黙知候補の自動検出）も同時に作ります。
