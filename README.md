@@ -64,9 +64,10 @@ export ANTHROPIC_API_KEY="sk-ant-..."      # bash
 
 python collect.py                 # build tacit_kb.db and detect candidates
 python collect.py 5               # try five papers first
-python collect.py 500             # approximates the paper's retrieval cap; exact counts (349 retrieved,
-                                   # 315 after filtering) may not reproduce exactly, since Europe PMC and
-                                   # NCBI BioC are updated over time
+python collect.py 500             # upper bound on papers attempted; the fifteen keyword queries
+                                   # return at most a few hundred candidates regardless of this value,
+                                   # so the run in the paper (349 retrieved, 315 after filtering)
+                                   # was not limited by the argument
 python extract_batch.py --limit 5 # try five papers first
 python extract_batch.py           # process every paper with candidates
 ```
