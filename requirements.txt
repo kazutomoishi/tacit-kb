@@ -1,0 +1,4 @@
+anthropic
+openpyxl
+scipy
+numpy
