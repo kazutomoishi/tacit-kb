@@ -10,12 +10,20 @@ make_blind_eval.py  —  盲検・対応ありの評価シートを生成
   設計:
     - 対応あり : 両条件のカードを持つ論文から、1論文につき各条件1枚ずつ
     - 層別     : 理論あり側カードの重要度で 高:中:低 = 16:14:10（40枚時）
+                 ある層のカードが足りない場合は、警告を出して他の層から補填する
     - 盲検     : 両条件を混ぜてシャッフルし、通し番号を振り直す
                  条件・card_id は評価者用ブックに一切残さない
 
   出力:
       tacit_card_eval_blind.xlsx   ← 評価者に渡す（条件が分からない）
       blind_key.csv                ← 対応表。評価者には渡さないこと
+                                     criticality 列は各カード自身の重要度
+                                     （対照条件のカードは対照条件側の重要度）
+
+  修正履歴:
+    論文で使った版では、層の不足を補填する処理で「使用済みの論文を飛ばす」
+    確認が抜けており、同じ論文が2回選ばれることがあった（論文では1本が該当し、
+    その論文を除外して分析した）。この版では補填処理でも使用済みの論文を飛ばす。
 """
 import sqlite3, sys, random, csv, re
 from openpyxl import Workbook
@@ -130,6 +138,8 @@ def main():
         for cid, pid, cr in pool:
             if len(chosen) >= N_PER_ARM:
                 break
+            if pid in used_papers:   # 修正: 補填でも同じ論文を2回選ばない
+                continue
             used_papers.add(pid)
             chosen.append((cid, pid, cr))
 
