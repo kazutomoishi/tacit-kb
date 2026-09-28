@@ -4,7 +4,7 @@ Scripts for the paper
 
 > Ishi K. Externalizing tacit experimental know-how with large language models:
 > a workflow, its preliminary expert evaluation, and a proposed extension to
-> materials science. *Science and Technology of Advanced Materials: Methods*, 2026.
+> materials science. Submitted to *Science and Technology of Advanced Materials: Methods*, 2026.
 
 The workflow treats the vague wording that survives in published protocols —
 "gently", "until clear", "approximately" — as a trace of an expert judgment the
