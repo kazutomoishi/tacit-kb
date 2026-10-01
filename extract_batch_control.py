@@ -137,7 +137,7 @@ def main():
     conn.commit()
     conn.close()
     print(f"\n完了: {saved_papers}論文 / {saved_cards}カード保存。スキップ {skipped}件、失敗 {errors}件。")
-    print("次に  python compare_theory.py  を実行してください。")
+    
 
 
 if __name__ == "__main__":
